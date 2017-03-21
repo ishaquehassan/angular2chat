@@ -1,0 +1,19 @@
+* {
+  &:focus, &:hover, &:active {
+    outline: 0 !important;
+    text-decoration: none !important;
+  }
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial';
+}
+
+*:not(i){
+  color: $text-color-primary;
+}
+
+@mixin scroll-view(){
+  overflow-y: scroll;
+  @include scrollbar(6px,#fff,#cbcbcb);
+}
