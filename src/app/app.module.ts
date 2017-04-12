@@ -6,12 +6,13 @@ import { MaterialModule } from '@angular/material';
 import { RoutingModule } from './app-routing.module';
 import 'hammerjs';
 
+
 import { AppComponent } from './app.component';
 import { ChatListComponent } from './left-panels/chat-list/chat-list.component';
 import { EditProfileComponent } from './left-panels/edit-profile/edit-profile.component';
 import { WelcomeComponent } from './main-panels/welcome/welcome.component';
 import { ChatComponent } from './main-panels/chat/chat.component';
-import { MainChatComponent } from './main-chat/main-chat.component';
+import { MainChatComponent } from './chat/main-chat.component';
 
 
 
@@ -25,11 +26,11 @@ import { MainChatComponent } from './main-chat/main-chat.component';
     MainChatComponent
   ],
   imports: [
+    RoutingModule,
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
-    RoutingModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

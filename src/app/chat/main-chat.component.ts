@@ -1,14 +1,15 @@
-import {Component, OnInit, Input, OnDestroy} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {AppBase} from "../../app-base";
+import {AppBase} from "../app-base";
 import {Http} from "@angular/http";
 
+
 @Component({
-  selector: 'app-chat',
-  templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css']
+  selector: 'app-main-chat',
+  templateUrl: './main-chat.component.html',
+  styleUrls: ['./main-chat.component.css']
 })
-export class ChatComponent extends AppBase implements OnInit,OnDestroy {
+export class MainChatComponent extends AppBase implements OnInit {
   id: number;
   private sub: any;
 

@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import {AppBase} from "../../app-base";
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css']
 })
-export class WelcomeComponent implements OnInit {
+export class WelcomeComponent extends AppBase implements OnInit {
 
-  constructor() { }
+  constructor(public http: Http) {
+    super(http)
+  }
 
   ngOnInit() {
   }

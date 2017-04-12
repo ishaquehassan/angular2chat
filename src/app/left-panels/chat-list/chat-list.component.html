@@ -26,7 +26,7 @@
 </div>
 
 <div class="list list-style-1">
-  <a href="#" class="list-item"  [routerLink]="[{ outlets: { 'main-panel': 'messages' } }]">
+  <a href="#" class="list-item" [routerLink]="['/chat','messages',1]">
     <div class="pull-left item-image-block">
             <span class="user-icon">
               <i class="fa fa-user" aria-hidden="true"></i>
@@ -47,7 +47,7 @@
       </div>
     </div>
   </a>
-  <a href="#" class="list-item">
+  <a href="#" class="list-item" [routerLink]="['/chat','messages',2]">
     <div class="pull-left item-image-block">
             <span class="user-icon">
               <i class="fa fa-user" aria-hidden="true"></i>
